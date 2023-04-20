@@ -5,7 +5,7 @@ from os import getenv
 import json
 
 # config = dotenv_values(".env") or os.getenv("OPENAI_API_KEY")
-config = os.getenv("OPENAI_API_KEY")
+config = getenv("OPENAI_API_KEY")
 
 openai.api_key = config["OPENAI_API_KEY"]
 
